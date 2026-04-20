@@ -6,8 +6,11 @@ import material from '@primeuix/themes/material'
 import 'primeicons/primeicons.css';
 import 'primeflex/primeflex.css'
 import {Avatar,Button,SelectButton,Drawer,Card,Menu, Menubar, Toolbar, Tooltip} from "primevue";
+import i18n from "./i18n.js";
 
-createApp(App).use(Primevue, {ripple: true, theme: {preset: Material}})
+createApp(App)
+    .use(i18n)
+    .use(Primevue, {ripple: true, theme: {preset: Material}})
     .component ('pv-button', Button)
     .component ('pv-select-button', SelectButton)
     .component('pv-avatar', Avatar)
